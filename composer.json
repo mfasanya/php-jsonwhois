@@ -1,0 +1,16 @@
+{
+    "name": "mfasanya/php-jsonwhois",
+    "description": "A PHP library for the JsonWhois API",
+    "authors": [
+        {
+            "name": "Mitchell Fasanya",
+            "email": "m.fasanya@jsonwhois.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "psr-0": {
+            "JsonWhois": "src/"
+        }
+    }
+}
