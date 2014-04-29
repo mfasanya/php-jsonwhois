@@ -4,10 +4,11 @@ require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Compos
 
 use JsonWhois\JsonWhois;
 
-$json = new JsonWhois();
+$API = new JsonWhois();
 
-$json->apiKey("TEST");
+$API->apiKey("API KEY");
 
-$res =  $json->whois('google.com');
+$data['whois'] =  $API->whois('google.com');
+$data['screenshot'] =  $API->screenshot('google.com');
 
-print_r($res);
+print_r($data);
