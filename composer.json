@@ -9,11 +9,13 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "mashape/unirest-php" : "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "JsonWhois": "src/"
+            "JsonWhois": "src/",
+            "Unirest": "lib/"
         }
     }
 }

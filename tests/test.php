@@ -2,6 +2,12 @@
 
 require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
 
-use JsonWhois\Whois;
+use JsonWhois\JsonWhois;
 
-echo Whois::world();
+$json = new JsonWhois();
+
+$json->apiKey("TEST");
+
+$res =  $json->whois('google.com');
+
+print_r($res);
