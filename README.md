@@ -14,7 +14,7 @@ PHP version >= 5.3.0.
             "mfasanya/php-jsonwhois": ">=1.0.0"
         }
     }
-    ```
+ ```
 ## Configuring
 
  ``` php
