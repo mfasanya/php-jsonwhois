@@ -14,8 +14,10 @@
     },
     "autoload": {
         "psr-0": {
-            "JsonWhois": "src/",
             "Unirest": "lib/"
+        },
+        "psr-4": {
+            "JsonWhois\\": "src/"
         }
     }
 }

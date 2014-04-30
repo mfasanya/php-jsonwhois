@@ -6,9 +6,9 @@ use JsonWhois\JsonWhois;
 
 $API = new JsonWhois();
 
-$API->apiKey("API KEY");
+$API->apiKey("534c6f9e5febdb3a00109b1a");
 
-$data['whois'] =  $API->whois('google.com');
-$data['screenshot'] =  $API->screenshot('google.com');
+$data['whois'] =  $API->whois('bloom.com');
+$data['screenshot'] =  $API->screenshot('bloom.com');
 
 print_r($data);
