@@ -11,7 +11,7 @@ PHP version >= 5.3.0.
  ``` json
     {
         "require": {
-            "mfasanya/php-jsonwhois": ">=1.0.0"
+            "mfasanya/php-jsonwhois": "dev-master"
         }
     }
  ```
