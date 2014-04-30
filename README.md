@@ -1,6 +1,6 @@
 # php-jsonwhois
 
-A PHP Library for the jsonwhois API
+A PHP Library for the [JsonWhois](http://jsonwhois.com "JsonWhois") API. It gathers social, whois and screenshot data for domains.
 
 ## Requirements
 
