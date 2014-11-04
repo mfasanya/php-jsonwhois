@@ -10,7 +10,7 @@ class JsonWhois
 
     public function __construct()
     {
-        $this->apiBase = "http://jsonwhois.com/api/";
+        $this->apiBase = "http://jsonwhois.com/api/v1";
         return;
     }
 
@@ -25,10 +25,12 @@ class JsonWhois
 
         $response = Unirest::get($this->apiBase . "whois",
 
-            array( "Accept" => "application/json" ),
+            array( 
+                "Accept" => "application/json",
+                "Authorization" => "Token token='" . $this->apiKey . "'"
+            ),
 
             array(
-                "apiKey" => $this->apiKey,
                 "domain" => $domain
             )
 
@@ -44,10 +46,12 @@ class JsonWhois
 
         $response = Unirest::get($this->apiBase . "screenshot",
 
-            array( "Accept" => "application/json" ),
+            array( 
+                "Accept" => "application/json",
+                "Authorization" => "Token token='" . $this->apiKey . "'"
+            ),
 
             array(
-                "apiKey" => $this->apiKey,
                 "domain" => $domain
             )
 
