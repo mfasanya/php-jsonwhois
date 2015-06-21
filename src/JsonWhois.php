@@ -27,7 +27,7 @@ class JsonWhois
 
             array( 
                 "Accept" => "application/json",
-                "Authorization" => "Token token='" . $this->apiKey . "'"
+                "Authorization" => "Token token=" . $this->apiKey
             ),
 
             array(
